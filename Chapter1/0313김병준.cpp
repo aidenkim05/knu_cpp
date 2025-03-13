@@ -1,4 +1,4 @@
-//½Ç½À ¹®Á¦ 2´Ü¿ø
+//ì‹¤ìŠµ ë¬¸ì œ 2ë‹¨ì›
 //1
 /*
 #include<iostream>
@@ -10,16 +10,16 @@ int main() {
 //2
 #include<iostream>
 int main() {
-	std::cout << "ÄÄÇ»ÅÍ°øÇĞºÎ\n";
-	std::cout << "21¼¼\n";
-	std::cout << "´ëÅë·É\n";
+	std::cout << "ì»´í“¨í„°ê³µí•™ë¶€\n";
+	std::cout << "21ì„¸\n";
+	std::cout << "ëŒ€í†µë ¹\n";
 	return 0;
 }
 
 //3
 #include<iostream>
 int main() {
-	std::cout << "1ºÎÅÍ 10±îÁö ´õÇÑ °á°ú´Â " << 55 << " ÀÔ´Ï´Ù.";
+	std::cout << "1ë¶€í„° 10ê¹Œì§€ ë”í•œ ê²°ê³¼ëŠ” " << 55 << " ì…ë‹ˆë‹¤.";
 	return 0;
 }
 
