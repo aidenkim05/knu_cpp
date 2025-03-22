@@ -1,4 +1,4 @@
-//¿¹Á¦ 3-1
+//ì˜ˆì œ 3-1
 /*#include <iostream>
 using namespace std;
 class Circle {
@@ -13,14 +13,14 @@ int main() {
 	Circle donut;
 	donut.radius = 1; 
 	double area = donut.getArea();
-	cout << "donut ¸éÀûÀº " << area << endl;
+	cout << "donut ë©´ì ì€ " << area << endl;
 	Circle pizza;
 	pizza.radius = 30;
 	area = pizza.getArea();
-	cout << "pizza ¸éÀûÀº " << area << endl;
+	cout << "pizza ë©´ì ì€ " << area << endl;
 }
 
-//¿¹Á¦ 3-1 Ãß°¡ ¹®Á¦
+//ì˜ˆì œ 3-1 ì¶”ê°€ ë¬¸ì œ
 #include<iostream>
 using namespace std;
 class Circle {
@@ -41,18 +41,18 @@ int main() {
 	Circle inner_donut_two;
 	inner_donut_two.innerradius = 1;
 	double innerarea = inner_donut_two.getinnerArea();
-	cout << "inner_donut_two ¸éÀûÀº " << innerarea << endl;
+	cout << "inner_donut_two ë©´ì ì€ " << innerarea << endl;
 
 	Circle outter_donut_two;
 	outter_donut_two.outterradius = 10;
 	double outterarea = outter_donut_two.getoutterArea();
-	cout << "outter_donut_two ¸éÀûÀº " << outterarea << endl;
+	cout << "outter_donut_two ë©´ì ì€ " << outterarea << endl;
 
-	cout << "µµ³ÓÀÇ ¸éÀûÀº" << outterarea - innerarea << endl;
+	cout << "ë„ë„›ì˜ ë©´ì ì€" << outterarea - innerarea << endl;
 
 }
 
-//¿¹Á¦ 3-2
+//ì˜ˆì œ 3-2
 #include <iostream>
 using namespace std;
 
@@ -71,10 +71,10 @@ int main() {
 	Rectangle rect;
 	rect.width = 3;
 	rect.height = 5;
-	cout << "»ç°¢ÇüÀÇ ¸éÀûÀº " << rect.getArea() << endl;
+	cout << "ì‚¬ê°í˜•ì˜ ë©´ì ì€ " << rect.getArea() << endl;
 }
 
-//¿¹Á¦ 3-2 Ãß°¡ ¹®Á¦
+//ì˜ˆì œ 3-2 ì¶”ê°€ ë¬¸ì œ
 #include <iostream>
 using namespace std;
 
@@ -95,41 +95,41 @@ int main() {
 	rect.width = 3;
 	rect.height = 5;
 	rect.thickness = 2;
-	cout << "»ç°¢ÇüÀÇ Ã¼ÀûÀº " << rect.getArea() << endl;
+	cout << "ì‚¬ê°í˜•ì˜ ì²´ì ì€ " << rect.getArea() << endl;
 }
 
-//¿¹Á¦ 3-3
+//ì˜ˆì œ 3-3
 #include <iostream>
 using namespace std;
 
 class Circle {
 public:
 	int radius;
-	Circle(); // ¸Å°³ º¯¼ö ¾ø´Â »ı¼ºÀÚ
-	Circle(int r); // ¸Å°³ º¯¼ö ÀÖ´Â »ı¼ºÀÚ
+	Circle(); // ë§¤ê°œ ë³€ìˆ˜ ì—†ëŠ” ìƒì„±ì
+	Circle(int r); // ë§¤ê°œ ë³€ìˆ˜ ìˆëŠ” ìƒì„±ì
 	double getArea();
 };
 Circle::Circle() {
 	radius = 1;
-	cout << "¹İÁö¸§ " << radius << " ¿ø »ı¼º" << endl;
+	cout << "ë°˜ì§€ë¦„ " << radius << " ì› ìƒì„±" << endl;
 }
 Circle::Circle(int r) {
 	radius = r;
-	cout << "¹İÁö¸§ " << radius << " ¿ø »ı¼º" << endl;
+	cout << "ë°˜ì§€ë¦„ " << radius << " ì› ìƒì„±" << endl;
 }
 double Circle::getArea() {
 	return 3.14 * radius * radius;
 }
 int main() {
-	Circle donut; // ¸Å°³ º¯¼ö ¾ø´Â »ı¼ºÀÚ È£Ãâ
+	Circle donut; // ë§¤ê°œ ë³€ìˆ˜ ì—†ëŠ” ìƒì„±ì í˜¸ì¶œ
 	double area = donut.getArea();
-	cout << "donut ¸éÀûÀº " << area << endl;
-	Circle pizza(30); // ¸Å°³ º¯¼ö ÀÖ´Â »ı¼ºÀÚ È£Ãâ
+	cout << "donut ë©´ì ì€ " << area << endl;
+	Circle pizza(30); // ë§¤ê°œ ë³€ìˆ˜ ìˆëŠ” ìƒì„±ì í˜¸ì¶œ
 	area = pizza.getArea();
-	cout << "pizza ¸éÀûÀº " << area << endl;
+	cout << "pizza ë©´ì ì€ " << area << endl;
 }
 
-//¿¹Á¦ 3-6
+//ì˜ˆì œ 3-6
 #include <iostream> 
 using namespace std;
 
@@ -158,14 +158,14 @@ int main() {
 	Rectangle rect1;
 	Rectangle rect2(3, 5);
 	Rectangle rect3(3);
-	if (rect1.isSquare()) cout << "rect1Àº Á¤»ç°¢ÇüÀÌ´Ù." << endl;
-	if (rect2.isSquare()) cout << "rect2´Â Á¤»ç°¢ÇüÀÌ´Ù." << endl;
-	if (rect3.isSquare()) cout << "rect3´Â Á¤»ç°¢ÇüÀÌ´Ù." << endl;
+	if (rect1.isSquare()) cout << "rect1ì€ ì •ì‚¬ê°í˜•ì´ë‹¤." << endl;
+	if (rect2.isSquare()) cout << "rect2ëŠ” ì •ì‚¬ê°í˜•ì´ë‹¤." << endl;
+	if (rect3.isSquare()) cout << "rect3ëŠ” ì •ì‚¬ê°í˜•ì´ë‹¤." << endl;
 }*/
 
 
-//½Ç½À¹®Á¦
-//1¹ø
+//ì‹¤ìŠµë¬¸ì œ
+//1ë²ˆ
 /*
 #include<iostream>
 using namespace std;
@@ -189,11 +189,11 @@ Tower::Tower(int h) {
 int main() {
 	Tower myTower;
 	Tower seoulTower(100);
-	cout << myTower.getHeight() << "¹ÌÅÍ" << endl;
-	cout << seoulTower.getHeight() << "¹ÌÅÍ" << endl;
+	cout << myTower.getHeight() << "ë¯¸í„°" << endl;
+	cout << seoulTower.getHeight() << "ë¯¸í„°" << endl;
 }
 */
-//2¹ø
+//2ë²ˆ
 #include<iostream>
 #include<string>
 using namespace std;
