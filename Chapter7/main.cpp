@@ -1,4 +1,4 @@
-//1¹ø
+//1ë²ˆ
 /*
 #include <iostream>
 using namespace std;
@@ -29,7 +29,7 @@ public:
 
 	void show()
 	{
-		cout << title << ' ' << price << "¿ø " << pages << "ÆäÀÌÁö" << endl;
+		cout << title << ' ' << price << "ì› " << pages << "íŽ˜ì´ì§€" << endl;
 	}
 	string getTitle()
 	{
@@ -39,7 +39,7 @@ public:
 
 int main()
 {
-	Book a("Ã»Ãá", 20000, 300), b("¹Ì·¡", 30000, 500);
+	Book a("ì²­ì¶˜", 20000, 300), b("ë¯¸ëž˜", 30000, 500);
 	a += 500;
 	b -= 500;
 	a.show();
@@ -47,7 +47,7 @@ int main()
 }
 
 
-//1-2¹ø
+//1-2ë²ˆ
 #include <iostream>
 using namespace std;
 
@@ -68,7 +68,7 @@ public:
 
 	void show()
 	{
-		cout << title << ' ' << price << "¿ø " << pages << "ÆäÀÌÁö" << endl;
+		cout << title << ' ' << price << "ì› " << pages << "íŽ˜ì´ì§€" << endl;
 	}
 	string getTitle()
 	{
@@ -90,7 +90,7 @@ Book& operator -= (Book& op, int x)
 
 int main()
 {
-	Book a("Ã»Ãá", 20000, 300), b("¹Ì·¡", 30000, 500);
+	Book a("ì²­ì¶˜", 20000, 300), b("ë¯¸ëž˜", 30000, 500);
 	a += 500;
 	b -= 500;
 	a.show();
@@ -98,7 +98,7 @@ int main()
 }
 
 
-//3¹ø
+//3ë²ˆ
 #include <iostream>
 #include <string>
 using namespace std;
@@ -111,7 +111,7 @@ public:
 		this->title = title; this->price = price, this->pages = pages;
 	}
 	void show() {
-		cout << title << ' ' << price << "¿ø " << pages << " ÆäÀÌÁö" << endl;
+		cout << title << ' ' << price << "ì› " << pages << " íŽ˜ì´ì§€" << endl;
 	}
 	string getTitle() { return title; }
 	bool operator ! () {
@@ -123,12 +123,12 @@ public:
 
 int main()
 {
-	Book book("º­·è½ÃÀå", 0, 50);
-	if (!book) cout << "°øÂ¥´Ù" << endl;
+	Book book("ë²¼ë£©ì‹œìž¥", 0, 50);
+	if (!book) cout << "ê³µì§œë‹¤" << endl;
 }
 
 
-//5¹ø
+//5ë²ˆ
 #include <iostream>
 using namespace std;
 
@@ -161,13 +161,13 @@ int main()
 
 	Color fuchsia(255, 0, 255);
 	if (c == fuchsia)
-		cout << "º¸¶ó»ö ¸ÂÀ½";
+		cout << "ë³´ë¼ìƒ‰ ë§žìŒ";
 	else
-		cout << "º¸¶ó»ö ¾Æ´Ô";
+		cout << "ë³´ë¼ìƒ‰ ì•„ë‹˜";
 }
 
 
-//7-1¹ø
+//7-1ë²ˆ
 #include <iostream>
 using namespace std;
 
@@ -211,7 +211,7 @@ int main()
 	b.show();
 }
 
-//7-2¹ø
+//7-2ë²ˆ
 #include <iostream>
 using namespace std;
 
@@ -255,7 +255,7 @@ int main()
 	b.show();
 }
 
-//9¹ø
+//9ë²ˆ
 #include <iostream>
 using namespace std;
 
@@ -263,7 +263,7 @@ class Circle {
 	int radius;
 public:
 	Circle(int radius = 0) { this->radius = radius; }
-	void show() { cout << "radius = " << radius << "ÀÎ ¿ø" << endl; }
+	void show() { cout << "radius = " << radius << "ì¸ ì›" << endl; }
 	friend Circle operator + (int a, Circle op1);
 };
 
@@ -280,7 +280,7 @@ int main()
 	a.show();
 	b.show();
 }*/
-//11¹ø
+//11ë²ˆ
 #include <iostream>
 #include <string>
 using namespace std;
