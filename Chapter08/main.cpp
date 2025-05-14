@@ -1,4 +1,4 @@
-//1¹ø
+//1ë²ˆ
 /*#include <iostream>
 using namespace std;
 
@@ -24,7 +24,7 @@ public:
 	}
 	void show()
 	{
-		cout << " ¹ÝÁö¸§ÀÌ " << radius << "ÀÎ " << name;
+		cout << " ë°˜ì§€ë¦„ì´ " << radius << "ì¸ " << name;
 	}
 };
 
@@ -35,7 +35,7 @@ int main()
 }
 
 
-//3¹ø
+//3ë²ˆ
 #include <iostream>
 using namespace std;
 
@@ -73,7 +73,7 @@ public:
 	}
 	void show()
 	{
-		cout << color << "»öÀ¸·Î (" << getX() << ", " << getY() << ")¿¡ À§Ä¡ÇÑ Á¡ÀÔ´Ï´Ù." << endl;
+		cout << color << "ìƒ‰ìœ¼ë¡œ (" << getX() << ", " << getY() << ")ì— ìœ„ì¹˜í•œ ì ìž…ë‹ˆë‹¤." << endl;
 	}
 };
 
@@ -85,7 +85,7 @@ int main()
 	cp.show();
 }
 
-//5¹ø
+//5ë²ˆ
 #include <iostream>
 using namespace std;
 
@@ -141,21 +141,21 @@ int main()
 {
 	MyQueue mQ(100);
 	int n;
-	cout << "Å¥¿¡ »ðÀÔÇÒ 5°³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¶ó >> ";
+	cout << "íì— ì‚½ìž…í•  5ê°œì˜ ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ë¼ >> ";
 	for (int i = 0; i < 5; i++)
 	{
 		cin >> n;
 		mQ.enqueue(n);
 	}
-	cout << "Å¥ÀÇ ¿ë·® : " << mQ.capacity() << ", Å¥ÀÇ Å©±â : " << mQ.length() << endl;
-	cout << "Å¥ÀÇ ¿ø¼Ò¸¦ ¼ø¼­´ë·Î Á¦°ÅÇÏ¿© Ãâ·ÂÇÑ´Ù. >> ";
+	cout << "íì˜ ìš©ëŸ‰ : " << mQ.capacity() << ", íì˜ í¬ê¸° : " << mQ.length() << endl;
+	cout << "íì˜ ì›ì†Œë¥¼ ìˆœì„œëŒ€ë¡œ ì œê±°í•˜ì—¬ ì¶œë ¥í•œë‹¤. >> ";
 	while (mQ.length() != 0)
 	{
 		cout << mQ.dequeue() << ' ';
 	}
-	cout << endl << "Å¥ÀÇ ÇöÀç Å©±â : " << mQ.length() << endl;
+	cout << endl << "íì˜ í˜„ìž¬ í¬ê¸° : " << mQ.length() << endl;
 }
-//7¹ø
+//7ë²ˆ
 #include <iostream>
 using namespace std;
 
@@ -228,7 +228,7 @@ int main()
 	for (int i = 0; i < 5; i++)
 		cout << mainMemory.read(i);
 }*/
-//9¹ø
+//9ë²ˆ
 #include <iostream>
 #include <string>
 using namespace std;
@@ -267,27 +267,27 @@ class Console {
 public:
 	static int getMenu() {
 		int select;
-		cout << "¿¹¾à:1, Ãë¼Ò:2, º¸±â:3, ³¡³»±â:4 >> ";
+		cout << "ì˜ˆì•½:1, ì·¨ì†Œ:2, ë³´ê¸°:3, ëë‚´ê¸°:4 >> ";
 		cin >> select;
 		cin.ignore();
 		return select;
 	}
 	static int getTime() {
 		int select;
-		cout << "07½Ã:1, 12½Ã:2, 17½Ã:3 >> ";
+		cout << "07ì‹œ:1, 12ì‹œ:2, 17ì‹œ:3 >> ";
 		cin >> select;
 		cin.ignore();
 		return select - 1;
 	}
 	static int getSeatNum() {
 		int select;
-		cout << "ÁÂ¼®¹øÈ£ >> "; cin >> select;
+		cout << "ì¢Œì„ë²ˆí˜¸ >> "; cin >> select;
 		cin.ignore();
 		return select - 1;
 	}
 	static string getName() {
 		string name;
-		cout << "ÀÌ¸§ ÀÔ·Â >> "; getline(cin, name);
+		cout << "ì´ë¦„ ìž…ë ¥ >> "; getline(cin, name);
 		return name;
 	}
 };
@@ -299,9 +299,9 @@ public:
 	AirlineBook() {
 		this->scheduleSize = 3;
 		this->schedule = new Schedule[this->scheduleSize];
-		schedule[0].setTime("07½Ã");
-		schedule[1].setTime("12½Ã");
-		schedule[2].setTime("17½Ã");
+		schedule[0].setTime("07ì‹œ");
+		schedule[1].setTime("12ì‹œ");
+		schedule[2].setTime("17ì‹œ");
 	}
 	void book(int time, int index, string name) { schedule[time].book(index, name); }
 	void cancel(int time, int index) { schedule[time].cancelBook(index); }
@@ -333,7 +333,7 @@ class AirlineBookManager {
 public:
 	AirlineBookManager() { AB = new AirlineBook; }
 	void run() {
-		cout << "***** ÇÑ¼ºÇ×°ø¿¡ ¿À½Å°ÍÀ» È¯¿µÇÕ´Ï´Ù. *****" << endl;
+		cout << "***** í•œì„±í•­ê³µì— ì˜¤ì‹ ê²ƒì„ í™˜ì˜í•©ë‹ˆë‹¤. *****" << endl;
 		int flag = true;
 		while (flag) {
 			switch (Console::getMenu()) {
@@ -350,12 +350,12 @@ public:
 				flag = false;
 				break;
 			default:
-				cout << "´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä" << endl;
+				cout << "ë‹¤ì‹œ ìž…ë ¥í•˜ì„¸ìš”" << endl;
 				break;
 			}
 			cout << endl;
 		}
-		cout << "¿¹¾à ½Ã½ºÅÛÀ» Á¾·áÇÕ´Ï´Ù." << endl;
+		cout << "ì˜ˆì•½ ì‹œìŠ¤í…œì„ ì¢…ë£Œí•©ë‹ˆë‹¤." << endl;
 	}
 };
 
