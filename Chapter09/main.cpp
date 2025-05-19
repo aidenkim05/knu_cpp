@@ -1,4 +1,4 @@
-//1¹ø
+//1ë²ˆ
 /*
 #include <iostream>
 using namespace std;
@@ -7,7 +7,7 @@ class Converter
 {
 protected:
 	double ratio;
-	virtual double convert(double src) = 0; // ¼ø¼ö °¡»óÇÔ¼ö
+	virtual double convert(double src) = 0; // ìˆœìˆ˜ ê°€ìƒí•¨ìˆ˜
 	virtual string getSourceString() = 0;
 	virtual string getDestString() = 0;
 public:
@@ -15,10 +15,10 @@ public:
 	void run()
 	{
 		double src;
-		cout << getSourceString() << "À» " << getDestString() << "·Î ¹Ù²ß´Ï´Ù.";
-		cout << getSourceString() << "À» ÀÔ·ÂÇÏ¼¼¿ä >> ";
+		cout << getSourceString() << "ì„ " << getDestString() << "ë¡œ ë°”ê¿‰ë‹ˆë‹¤.";
+		cout << getSourceString() << "ì„ ì…ë ¥í•˜ì„¸ìš” >> ";
 		cin >> src;
-		cout << "º¯È¯ °á°ú : " << convert(src) << getDestString() << endl;
+		cout << "ë³€í™˜ ê²°ê³¼ : " << convert(src) << getDestString() << endl;
 	}
 };
 
@@ -28,8 +28,8 @@ protected:
 	double oneDollarWon{};
 public:
 	WonToDollar(double oneDollarWon) : Converter(ratio) { this->oneDollarWon = oneDollarWon; }
-	string getSourceString() { return "¿ø"; }
-	string getDestString() { return "´Ş·¯"; }
+	string getSourceString() { return "ì›"; }
+	string getDestString() { return "ë‹¬ëŸ¬"; }
 	double convert(double src) { return src / oneDollarWon; }
 };
 
@@ -39,7 +39,7 @@ int main()
 	wd.run();
 }
 
-//3¹ø
+//3ë²ˆ
 #include <iostream>
 using namespace std;
 
@@ -61,13 +61,13 @@ public:
 void LoopAdder::read()
 {
 	cout << name << ":" << endl;
-	cout << "Ã³À½ ¼ö¿¡¼­ µÎ¹øÂ° ¼ö±îÁö ´õÇÕ´Ï´Ù. µÎ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä. >> ";
+	cout << "ì²˜ìŒ ìˆ˜ì—ì„œ ë‘ë²ˆì§¸ ìˆ˜ê¹Œì§€ ë”í•©ë‹ˆë‹¤. ë‘ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”. >> ";
 	cin >> x >> y;
 }
 
 void LoopAdder::write()
 {
-	cout << x << "¿¡¼­ " << y << "±îÁöÀÇ ÇÕ = " << sum << "ÀÔ´Ï´Ù. " << endl;
+	cout << x << "ì—ì„œ " << y << "ê¹Œì§€ì˜ í•© = " << sum << "ì…ë‹ˆë‹¤. " << endl;
 }
 
 void LoopAdder::run()
@@ -104,7 +104,7 @@ int main()
 	forLoop.run();
 }
 
-//5¹ø
+//5ë²ˆ
 #include <iostream>
 using namespace std;
 
@@ -180,7 +180,7 @@ int main()
 	cout << orGate.operation() << endl;
 	cout << xorGate.operation() << endl;
 }
-//7¹ø
+//7ë²ˆ
 #include <iostream>
 using namespace std;
 #define PI 3.14;
@@ -232,15 +232,15 @@ public:
 int main()
 {
 	Shape* p[3];
-	p[0] = new Oval("ºó´ë¶±", 10, 20);
-	p[1] = new Rect("Âû¶±", 30, 40);
-	p[2] = new Triangular("Åä½ºÆ®", 30, 40);
+	p[0] = new Oval("ë¹ˆëŒ€ë–¡", 10, 20);
+	p[1] = new Rect("ì°°ë–¡", 30, 40);
+	p[2] = new Triangular("í† ìŠ¤íŠ¸", 30, 40);
 	for (int i = 0; i < 3; i++)
-		cout << p[i]->getName() << "³ĞÀÌ´Â " << p[i]->getArea() << endl;
+		cout << p[i]->getName() << "ë„“ì´ëŠ” " << p[i]->getArea() << endl;
 	for (int i = 0; i < 3; i++)
 		delete p[i];
 }*/
-//9¹ø
+//9ë²ˆ
 #include <iostream>
 using namespace std;
 
@@ -275,18 +275,18 @@ public:
 	{
 		if (avaliableCount < pages || ink < pages)
 		{
-			cout << "¿ëÁö°¡ ºÎÁ·ÇÏ¿© Ãâ·ÂÇÒ ¼ö ¾ø½À´Ï´Ù." << endl;
+			cout << "ìš©ì§€ê°€ ë¶€ì¡±í•˜ì—¬ ì¶œë ¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤." << endl;
 		}
 		else
 		{
 			avaliableCount -= pages;
 			ink -= pages;
-			cout << "ÇÁ¸°Æ®ÇÏ¿´½À´Ï´Ù." << endl;
+			cout << "í”„ë¦°íŠ¸í•˜ì˜€ìŠµë‹ˆë‹¤." << endl;
 		}
 	}
 	void show()
 	{
-		cout << "À×Å©Á¬ : " << model << ", " << manufacturer << ", ³²Àº Á¾ÀÌ " << avaliableCount << ", ³²Àº À×Å© " << avaliableInk() << endl;
+		cout << "ì‰í¬ì ¯ : " << model << ", " << manufacturer << ", ë‚¨ì€ ì¢…ì´ " << avaliableCount << ", ë‚¨ì€ ì‰í¬ " << avaliableInk() << endl;
 	}
 };
 
@@ -297,7 +297,7 @@ protected:
 public:
 	LaserPrinter() {
 		model = "SCX-6x45";
-		manufacturer = "»ï¼ºÀüÀÚ";
+		manufacturer = "ì‚¼ì„±ì „ì";
 		avaliableCount = 3;
 		show();
 	}
@@ -309,24 +309,24 @@ public:
 	{
 		if (avaliableCount < pages || toner < pages)
 		{
-			cout << "¿ëÁö°¡ ºÎÁ·ÇÏ¿© Ãâ·ÂÇÒ ¼ö ¾ø½À´Ï´Ù." << endl;
+			cout << "ìš©ì§€ê°€ ë¶€ì¡±í•˜ì—¬ ì¶œë ¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤." << endl;
 		}
 		else
 		{
 			avaliableCount -= pages;
 			toner -= pages;
-			cout << "ÇÁ¸°Æ®ÇÏ¿´½À´Ï´Ù." << endl;
+			cout << "í”„ë¦°íŠ¸í•˜ì˜€ìŠµë‹ˆë‹¤." << endl;
 		}
 	}
 	void show()
 	{
-		cout << "À×Å©Á¬ : " << model << ", " << manufacturer << ", ³²Àº Á¾ÀÌ " << avaliableCount << ", ³²Àº Åä³Ê " << avaliableToner() << endl;
+		cout << "ì‰í¬ì ¯ : " << model << ", " << manufacturer << ", ë‚¨ì€ ì¢…ì´ " << avaliableCount << ", ë‚¨ì€ í† ë„ˆ " << avaliableToner() << endl;
 	}
 };
 
 int main()
 {
-	cout << "ÇöÀç ÀÛµ¿ÁßÀÎ 2´ëÀÇ ÇÁ¸°ÅÍ´Â ¾Æ·¡¿Í °°´Ù." << endl;
+	cout << "í˜„ì¬ ì‘ë™ì¤‘ì¸ 2ëŒ€ì˜ í”„ë¦°í„°ëŠ” ì•„ë˜ì™€ ê°™ë‹¤." << endl;
 	InkjetPrinter inkjet;
 	LaserPrinter laser;
 	int choice, count;
@@ -334,7 +334,7 @@ int main()
 	while (true)
 	{
 	reInput:
-		cout << "ÇÁ¸°ÅÍ (1: À×Å©Á¬, 2: ·¹ÀÌÀú)¿Í ¸Å¼ö ÀÔ·Â >> ";
+		cout << "í”„ë¦°í„° (1: ì‰í¬ì ¯, 2: ë ˆì´ì €)ì™€ ë§¤ìˆ˜ ì…ë ¥ >> ";
 		cin >> choice >> count;
 		if (choice == 1)
 		{
@@ -346,13 +346,13 @@ int main()
 		}
 		else
 		{
-			cout << "ÀÔ·ÂÀÌ Àß¸øµÇ¾ú½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä. " << endl;
+			cout << "ì…ë ¥ì´ ì˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”. " << endl;
 			goto reInput;
 		}
 		inkjet.show();
 		laser.show();
 	reyORn:
-		cout << "°è¼Ó ÇÁ¸°Æ® ÇÏ½Ã°Ú½À´Ï±î? ( y / n ) >> ";
+		cout << "ê³„ì† í”„ë¦°íŠ¸ í•˜ì‹œê² ìŠµë‹ˆê¹Œ? ( y / n ) >> ";
 		cin >> yORn;
 		if (yORn == 'y')
 			continue;
@@ -362,7 +362,7 @@ int main()
 		}
 		else
 		{
-			cout << "ÀÔ·ÂÀÌ Àß¸øµÇ¾ú½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä. " << endl;
+			cout << "ì…ë ¥ì´ ì˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”. " << endl;
 			goto reyORn;
 		}
 
