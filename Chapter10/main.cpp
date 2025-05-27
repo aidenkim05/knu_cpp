@@ -1,5 +1,5 @@
 /*
-//1¹ø
+//1ë²ˆ
 #include <iostream>
 #include <string>
 using namespace std;
@@ -21,7 +21,7 @@ int main() {
 	cout << biggest(b, 5) << endl;
 }
 
-//3¹ø
+//3ë²ˆ
 #include <iostream>
 #include <string>
 using namespace std;
@@ -40,7 +40,7 @@ int main() {
 	reverseArray(x, 5);
 	for (int i = 0; i < 5; i++) cout << x[i] << ' ';
 }
-//5¹ø
+//5ë²ˆ
 #include <iostream>
 using namespace std;
 
@@ -57,7 +57,7 @@ T* concat(T a[], int sizea, T b[], int sizeb) {
 
 int main()
 {
-	int xInt[] = { 1, 2, 3, 4, 5 }; // Á¤¼öÇü ¹è¿­ÀÏ °æ¿ì
+	int xInt[] = { 1, 2, 3, 4, 5 }; // ì •ìˆ˜í˜• ë°°ì—´ì¼ ê²½ìš°
 	int yInt[] = { 6, 7, 8, 9, 10 };
 
 	int xSize = size(xInt);
@@ -72,7 +72,7 @@ int main()
 	cout << endl;
 	delete[] p;
 
-	double xDouble[] = { 1.1, 2.2, 3.3, 4.4, 5.5 }; // ½Ç¼öÇü ¹è¿­ÀÏ °æ¿ì
+	double xDouble[] = { 1.1, 2.2, 3.3, 4.4, 5.5 }; // ì‹¤ìˆ˜í˜• ë°°ì—´ì¼ ê²½ìš°
 	double yDouble[] = { 6.6, 7.7, 8.8, 9.9, 10.1 };
 
 	xSize = size(xDouble);
@@ -88,8 +88,8 @@ int main()
 	delete[] q;
 }
 
-//7¹ø
-// <°´Ã¼ ÀÚÃ¼¸¦ ÅÛÇÃ¸´ ÇÔ¼ö·Î ºñ±³ÇÏ·Á°í ÇÏ°íÀÖ±â ¶§¹®ÀÌ´Ù.>
+//7ë²ˆ
+// <ê°ì²´ ìì²´ë¥¼ í…œí”Œë¦¿ í•¨ìˆ˜ë¡œ ë¹„êµí•˜ë ¤ê³  í•˜ê³ ìˆê¸° ë•Œë¬¸ì´ë‹¤.>
 #include <iostream>
 using namespace std;
 
@@ -114,12 +114,12 @@ int main()
 {
 	int a = 20, b = 50, c;
 	c = bigger(a, b);
-	cout << "20°ú 50Áß Å« °ªÀº " << c << endl;
+	cout << "20ê³¼ 50ì¤‘ í° ê°’ì€ " << c << endl;
 	Circle waffle(10), pizza(20), y;
 	y = bigger(waffle.getRadius(), pizza.getRadius());
-	cout << "waffle°ú pizza Áß Å« °ÍÀÇ ¹İÁö¸§Àº " << y.getRadius() << endl;
+	cout << "waffleê³¼ pizza ì¤‘ í° ê²ƒì˜ ë°˜ì§€ë¦„ì€ " << y.getRadius() << endl;
 }
-//9¹ø
+//9ë²ˆ
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -131,7 +131,7 @@ int main()
 	double sum{};
 	while (true)
 	{
-		cout << "Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä(0À» ÀÔ·ÂÇÏ¸é Á¾·á) >> ";
+		cout << "ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”(0ì„ ì…ë ¥í•˜ë©´ ì¢…ë£Œ) >> ";
 		cin >> num;
 		if (num == 0)
 			return 0;
@@ -143,12 +143,12 @@ int main()
 		}
 		cout << endl;
 		double regular = sum / size(v);
-		cout << "Æò±Õ = " << regular << endl;
+		cout << "í‰ê·  = " << regular << endl;
 		sum = 0;
 	}
 }
 
-//11¹ø
+//11ë²ˆ
 #include <iostream>
 #include <string>
 #include <vector>
@@ -185,34 +185,34 @@ int main() {
 	string name;
 	string writer;
 	int year;
-	cout << "ÀÔ°íÇÒ Ã¥À» ÀÔ·ÂÇÏ¼¼¿ä. ³âµµ¿¡ -1À» ÀÔ·ÂÇÏ¸é Á¾·áÇÕ´Ï´Ù. " << endl;
+	cout << "ì…ê³ í•  ì±…ì„ ì…ë ¥í•˜ì„¸ìš”. ë…„ë„ì— -1ì„ ì…ë ¥í•˜ë©´ ì¢…ë£Œí•©ë‹ˆë‹¤. " << endl;
 	while (true)
 	{
-		cout << "³âµµ >> ";
+		cout << "ë…„ë„ >> ";
 		cin >> year;
 		if (year == -1) {
-			cout << "ÃÑ ÀÔ°íµÈ Ã¥Àº " << size(bv) << "ÀÔ´Ï´Ù. " << endl;
+			cout << "ì´ ì…ê³ ëœ ì±…ì€ " << size(bv) << "ì…ë‹ˆë‹¤. " << endl;
 			break;
 		}
 		cin.ignore();
-		cout << "Ã¥ ÀÌ¸§ >> ";
+		cout << "ì±… ì´ë¦„ >> ";
 		getline(cin, name);
 
-		cout << "ÀúÀÚ >> ";
+		cout << "ì €ì >> ";
 		getline(cin, writer);
 
 		Book book(year, name, writer);
 		bv.push_back(book);
 	}
 	cin.ignore();
-	cout << "°Ë»öÇÏ°íÀÚ ÇÏ´Â Ã¥ÀÇ ÀúÀÚ ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä >> ";
+	cout << "ê²€ìƒ‰í•˜ê³ ì í•˜ëŠ” ì±…ì˜ ì €ì ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” >> ";
 	getline(cin, writer);
 	for (int i = 0; i < size(bv); i++)
 	{
 		if (bv[i].getWriter() == writer)
 			cout << bv[i].getYear() << ", " << bv[i].getName() << ", " << bv[i].getWriter() << endl;
 	}
-	cout << "°Ë»öÇÏ°íÀÚ ÇÏ´Â Ã¥ÀÇ Ãâ°£ ¿¬µµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä >> ";
+	cout << "ê²€ìƒ‰í•˜ê³ ì í•˜ëŠ” ì±…ì˜ ì¶œê°„ ì—°ë„ë¥¼ ì…ë ¥í•˜ì„¸ìš” >> ";
 	cin >> year;
 	for (int i = 0; i < size(bv); i++)
 	{
@@ -221,7 +221,7 @@ int main() {
 	}
 }
 
-//13¹ø
+//13ë²ˆ
 #include <iostream>
 #include <vector>
 #include <map>
@@ -231,31 +231,31 @@ int main() {
 	int choice, score;
 	string name;
 	map <string, int> dic;
-	cout << "***** Á¡¼ö°ü¸® ÇÁ·Î±×·¥ HIGH SCOREÀ» ½ÃÀÛÇÕ´Ï´Ù. *****" << endl;
+	cout << "***** ì ìˆ˜ê´€ë¦¬ í”„ë¡œê·¸ë¨ HIGH SCOREì„ ì‹œì‘í•©ë‹ˆë‹¤. *****" << endl;
 	while (true) {
-		cout << "ÀÔ·Â : 1, Á¶È¸ : 2, Á¾·á : 3 >> ";
+		cout << "ì…ë ¥ : 1, ì¡°íšŒ : 2, ì¢…ë£Œ : 3 >> ";
 		cin >> choice;
 		if (choice == 1) {
-			cout << "ÀÌ¸§°ú Á¡¼ö >> ";
+			cout << "ì´ë¦„ê³¼ ì ìˆ˜ >> ";
 			cin >> name >> score;
 			dic[name] = score;
 		}
 		else if (choice == 2) {
-			cout << "ÀÌ¸§ >> ";
+			cout << "ì´ë¦„ >> ";
 			cin >> name;
 			if (dic.find(name) == dic.end())
-				cout << "Ã£À» ¼ö ¾ø½À´Ï´Ù.";
+				cout << "ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
 			else
 				cout << dic[name] << endl;
 		}
 		else if (choice == 3)
 			break;
 	}
-	cout << "Á¾·áÇÕ´Ï´Ù..";
+	cout << "ì¢…ë£Œí•©ë‹ˆë‹¤..";
 	return 0;
 }
 
-//15¹ø
+//15ë²ˆ
 #include <iostream>
 #include <vector>
 #include <map>
@@ -277,19 +277,19 @@ int main() {
 	int choice, radius;
 	string name;
 	vector<Circle*> v;
-	cout << "¿øÀ» »èÁ¦ÇÏ°í »ğÀÔÇÏ´Â ÇÁ·Î±×·¥ÀÔ´Ï´Ù. \n";
+	cout << "ì›ì„ ì‚­ì œí•˜ê³  ì‚½ì…í•˜ëŠ” í”„ë¡œê·¸ë¨ì…ë‹ˆë‹¤. \n";
 	while (true) {
-		cout << "»ğÀÔ : 1, »èÁ¦ : 2, ¸ğµÎº¹±â : 3, Á¾·á : 4 >> ";
+		cout << "ì‚½ì… : 1, ì‚­ì œ : 2, ëª¨ë‘ë³µê¸° : 3, ì¢…ë£Œ : 4 >> ";
 		cin >> choice;
 		if (choice == 1) {
-			cout << "»ı¼ºÇÏ°íÀÚ ÇÏ´Â ¿øÀÇ ¹İÁö¸§°ú ÀÌ¸§Àº >> ";
+			cout << "ìƒì„±í•˜ê³ ì í•˜ëŠ” ì›ì˜ ë°˜ì§€ë¦„ê³¼ ì´ë¦„ì€ >> ";
 			cin >> radius >> name;
 			v.push_back(new Circle(radius, name));
 		}
 		else if (choice == 2) {
 			vector<Circle*>::iterator it;
 			it = v.begin();
-			cout << "»èÁ¦ÇÏ°íÀÚ ÇÏ´Â ¿øÀÇ ÀÌ¸§Àº >> ";
+			cout << "ì‚­ì œí•˜ê³ ì í•˜ëŠ” ì›ì˜ ì´ë¦„ì€ >> ";
 			cin >> name;
 			for (int i = 0; i < size(v); i++)
 			{
@@ -310,6 +310,6 @@ int main() {
 			break;
 		}
 	}
-	cout << "ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù..";
+	cout << "í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤..";
 	return 0;
 }*/
